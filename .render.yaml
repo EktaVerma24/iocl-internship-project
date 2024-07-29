@@ -1,7 +1,7 @@
 services:
   - type: web
     name: my-php-app
-    env: php
+    env: docker
     buildCommand: ''
     startCommand: 'apache2-foreground'
     plan: free
