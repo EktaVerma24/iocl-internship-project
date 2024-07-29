@@ -155,21 +155,27 @@
         <img src="IOL.gif" alt="logo">
         <h1>CARTRIDGE STOCK MANAGEMENT</h1>
         <div class="admin-icon-container">
-            <a href="adminlogin.html"><i class="fas fa-user-shield admin-icon" title="Login as Admin"></i></a>
+            <a href="adminlogin.php"><i class="fas fa-user-shield admin-icon" id="adminloginbutton" title="Login as Admin"></i></a>
         </div>
     </div>
     <div class="nav2"></div>
     <div class="content-box">
         <div class="content">
             <h2>Click Here To </h2>
-            <a href="login.html" class="login-button" id="loginButton">Login</a>
+            <a href="login.php" class="login-button" id="loginButton">Login</a>
         </div>
     </div>
 
     <script>
-        document.getElementById("loginButton").addEventListener("click", function (event) {
+        document.getElementById("adminloginbutton").addEventListener("click", function (event) {
             event.preventDefault();
-            window.location.href = "login.html"; // Change to your login.html or actual URL
+            window.location.href = "adminlogin.php"; // Change to your login.html or actual URL
+            
+        });
+            document.getElementById("loginButton").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "login.php"; // Change to your login.html or actual URL
+            
         });
     </script>
 
